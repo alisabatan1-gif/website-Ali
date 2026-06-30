@@ -83,3 +83,61 @@ align-items: center;
 font-size: 40px;
 color: white;
 }
+
+.container-about-kejutan {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.foto-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.foto-couple {
+    max-width: 320px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgb(red, green, blue);
+}
+
+.bunga-animasi {
+    position: absolute;
+    top: 40%;
+    left: -80px;
+    font-size: 70px;
+    opacity: 0;
+    animation: mawarDatang 1.5s ease-out 2s forwards;
+}
+
+@keyframes mawarDatang {
+    0% {
+        opacity: 0;
+        left: -80px;
+        transform: rotate(-45deg);
+    }
+    100% {
+         opacity: 1;
+        left: 40px;
+        transform: rotate(0deg);
+    }
+}
+
+.teks-kejutan {
+    font-size: 24px;
+    color: #e91e63;
+    font-weight: bold;
+    opacity: 0;
+    animation: teksMuncul 1s ease-in 3.5s forwards;
+}
+
+@keyframes teksMuncul {
+    0% {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
